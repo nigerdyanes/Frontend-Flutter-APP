@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:project_geolocalization/src/pages/basicPage.dart';
+import 'package:project_geolocalization/src/pages/loginPage.dart';
+import 'package:project_geolocalization/src/pages/splashPage.dart';
 
 void main() 
   {
@@ -38,7 +40,7 @@ class MyApp extends StatelessWidget {
       // routes: getApplicationRoutes(),
       onGenerateRoute: (RouteSettings settings)
       {
-        return MaterialPageRoute (builder: (BuildContext context) => BasicPage());
+        return MaterialPageRoute (builder: (BuildContext context) => LoginPage());
  
       },
 
