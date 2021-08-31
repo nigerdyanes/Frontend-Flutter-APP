@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:project_geolocalization/src/pages/basicPage.dart';
+import 'package:project_geolocalization/src/pages/groups/groupListPage.dart';
+import 'package:project_geolocalization/src/pages/groups/navigationBarTest.dart';
+import 'package:project_geolocalization/src/pages/incidentPage.dart';
 import 'package:project_geolocalization/src/pages/loginPage.dart';
+import 'package:project_geolocalization/src/pages/mapPage.dart';
 import 'package:project_geolocalization/src/pages/splashPage.dart';
 
 void main() 
@@ -15,7 +18,15 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp
     (
+
       theme: ThemeData(fontFamily: 'Roboto'),
+      darkTheme: ThemeData
+      (
+        primarySwatch: Colors.blue,
+        primaryColor: Color(0xFF000000),
+        accentColor: Color(0xFF000000),
+        visualDensity: VisualDensity.adaptivePlatformDensity
+      ),
       
       //IDIOMAS
       localizationsDelegates: 
@@ -38,9 +49,9 @@ class MyApp extends StatelessWidget {
       //ESTABLECER RUTAS
       initialRoute: '/',
       // routes: getApplicationRoutes(),
-      onGenerateRoute: (RouteSettings settings)
+      onGenerateRoute: (RouteSettings settings) 
       {
-        return MaterialPageRoute (builder: (BuildContext context) => LoginPage());
+        return MaterialPageRoute (builder: (BuildContext context) => GroupListPage());
  
       },
 

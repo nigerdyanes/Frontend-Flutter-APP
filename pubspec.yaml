@@ -11,9 +11,14 @@ environment:
 dependencies:
   color: ^3.0.0
   http: ^0.13.1
-
-
-
+  flutter_colorpicker: ^0.4.0
+  flutter_circle_color_picker: ^0.3.0
+  image_picker: ^0.7.5
+  video_player:
+  video_thumbnail: ^0.3.3
+  path_provider: ^2.0.1
+  curved_navigation_bar: ^0.3.7 #latest version
+  
   flutter:
     sdk: flutter
 

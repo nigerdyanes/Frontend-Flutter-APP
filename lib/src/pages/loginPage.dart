@@ -32,7 +32,7 @@ class _LoginPageState extends State<LoginPage> {
               
               SizedBox(height: AppTheme.getHeight(context) * 0.1,),
 
-              Text("Hola \nBienvenido!", style: TextStyle(color: thirdColor, fontSize: 30, fontWeight: FontWeight.bold)),
+              Text("Hola \nBienvenido!", style: TextStyle(color: thirdColor, fontSize: 30, fontWeight: FontWeight.w900)),
 
               SizedBox(height: AppTheme.getHeight(context) * 0.06,),
 
